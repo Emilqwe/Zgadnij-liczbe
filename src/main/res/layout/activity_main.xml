@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ZgadnijLiczbe"
+        android:text="Zgadnij Liczbę"
+        android:textSize="35sp"
+        android:layout_above="@id/sprawdz"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+         />
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nowaGra"
+        android:layout_centerInParent="true"
+        android:text="Wynik" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/podejsca"
+        android:layout_below="@id/wynik"
+        android:layout_alignLeft="@id/nowaGra"
+        android:text="Liczba Podejść: 0 " />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nowaGra"
+        android:layout_centerInParent="true"
+        android:text="Nowa Gra"
+        android:width="250dp"
+        android:onClick="nowaGra"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sprawdz"
+        android:layout_above="@id/nowaGra"
+        android:layout_alignRight="@id/nowaGra"
+        android:text="Sprawdź"
+        android:onClick="sprawdz"
+        android:width="150dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_above="@id/nowaGra"
+        android:layout_toLeftOf="@id/sprawdz"
+        android:layout_alignLeft="@id/nowaGra"
+    />
+</RelativeLayout>
+
+
+
