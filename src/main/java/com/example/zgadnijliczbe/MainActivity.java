@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         podejsca.setText("Liczba podejść: "+liczbaPodejsc);
         wynik.setText("Wynik");
         liczba.setText("");
-
     }
     public void sprawdz(View view) {
         TextView wynik = (TextView) findViewById(R.id.wynik);
